@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link href="map.css" rel="stylesheet" type="text/css" />
+        
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+        <script src="map.js"></script>
+    </head>
+
+    <body>
+        <p>
+            Latitude: <input type="text" id="input-lat"/>
+        </p>
+        <p>
+            Longitude: <input type="text" id="input-lng"/>
+        </p> 
+
+        <button onclick="displayMap('div-map', 
+                'input-lat', 'input-lng')">Display map</button>
+
+        <div id="div-map" class="map" />
+    </body>
+</html>
